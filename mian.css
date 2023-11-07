@@ -1,0 +1,106 @@
+/* making some static styles and classes */
+/* commmon styles */
+.w-100{
+    width: 100%;
+}
+.h-100{
+    height: 100%;
+}
+.openToWork{
+    left: 25% !important;
+    font-size: 80px !important;
+}
+*{
+    color: #fff;
+    text-shadow: 2px 2px 2px royalblue;
+    font-family: fantasy;
+    text-transform: capitalize;
+}
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* end common styles */
+.portfolio{
+    letter-spacing: 5px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.container{
+    width: 95%;
+    height: auto;
+    margin: 1rem auto;
+    padding: 20px 10px;
+    /* plus adding .glassEffect */
+}
+.glassEffect {
+    background: rgba(65, 105, 225, 0.286);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(65, 105, 225, 0.386);
+    overflow: hidden;
+}
+.commonBorder {
+    border-radius: 15px;
+    border: 2px solid royalblue;
+}
+
+/* to use this form of button write this in ur html {
+<div>
+    <button class="btn"><i class="animation"></i>BUTTON<i class="animation"></i>
+    </button>
+</div>
+} */
+.btn {
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    background: royalblue;
+    min-width: 200px;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    padding: 16px 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: .95;
+}
+
+.btn .animation {
+    border-radius: 100%;
+    animation: ripple 0.6s linear infinite;
+}
+
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+    }
+
+    100% {
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+    }
+}
+
+/* end global styles */

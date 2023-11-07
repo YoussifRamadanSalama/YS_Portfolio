@@ -1,0 +1,212 @@
+.container .navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.middleBody {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.middleBody .infoImageSlider {
+  padding: 0.5rem;
+  width: 60%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.middleBody .infoImageSlider .layout {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(65, 105, 225, 0.264);
+  z-index: 2;
+}
+.middleBody .infoImageSlider .slickSlider {
+  overflow: hidden;
+}
+.middleBody .infoImageSlider .slickSlider div {
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+}
+.middleBody .infoImageSlider .slickSlider div img {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.middleBody .infoImageSlider .slickSlider div .imageInfo {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  z-index: 3;
+  font-size: 30px;
+}
+.middleBody .details {
+  width: 35%;
+  padding: 0.5rem;
+}
+.middleBody .details .education,
+.middleBody .details .activities,
+.middleBody .details .postion,
+.middleBody .details .skills,
+.middleBody .details .softskills {
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin: 1rem 0;
+}
+.middleBody .details .education ul li,
+.middleBody .details .activities ul li,
+.middleBody .details .postion ul li,
+.middleBody .details .skills ul li,
+.middleBody .details .softskills ul li {
+  list-style-position: inside;
+}
+
+.container .projectsSlider div {
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+}
+.container .projectsSlider div img {
+  padding: 0.2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 200px;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.container .links {
+  display: flex;
+  flex-direction: row;
+}
+.container .links .Btn {
+  margin: 10px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  /* overflow: hidden; */
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.container .links .svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.container .links .BG {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: royalblue;
+  z-index: -1;
+  border-radius: 10px;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+.container .links .Btn:hover .BG {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+.container .links .Btn:hover .svgContainer {
+  background-color: rgba(156, 156, 156, 0.466);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+
+@media (max-width: 440px) {
+  .middleBody {
+    flex-direction: column;
+  }
+  .middleBody .infoImageSlider {
+    width: 95%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .middleBody .infoImageSlider .layout {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(65, 105, 225, 0.264);
+    z-index: 2;
+  }
+  .middleBody .infoImageSlider .slickSlider {
+    overflow: hidden;
+  }
+  .middleBody .infoImageSlider .slickSlider div {
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+  }
+  .middleBody .infoImageSlider .slickSlider div img {
+    width: 100%;
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .middleBody .infoImageSlider .slickSlider div .imageInfo {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    z-index: 3;
+    font-size: 30px;
+  }
+  .middleBody .details {
+    width: 95%;
+    padding: 0.5rem;
+  }
+  .middleBody .details .education,
+  .middleBody .details .activities,
+  .middleBody .details .postion,
+  .middleBody .details .skills,
+  .middleBody .details .softskills {
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    margin: 1rem 0;
+  }
+  .middleBody .details .education ul li,
+  .middleBody .details .activities ul li,
+  .middleBody .details .postion ul li,
+  .middleBody .details .skills ul li,
+  .middleBody .details .softskills ul li {
+    list-style-position: inside;
+  }
+}/*# sourceMappingURL=index.css.map */
